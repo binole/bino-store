@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import { getAllProducts } from '../services/products';
 
 export default function Home({ products }) {
   return (
@@ -29,11 +30,11 @@ export default function Home({ products }) {
 }
 
 export async function getStaticProps() {
-  const products = require('../__fixtures__/products.json')
+  const products = await getAllProducts();
 
   return {
     props: {
-      products
+      products: products.items
     }
   }
 }
