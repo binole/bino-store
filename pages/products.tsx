@@ -1,12 +1,12 @@
 import Head from 'next/head';
 import { getAllCategories, getAllProducts } from '../services/products';
 
-export default function Home({ products, categories }) {
+export default function Products({ products, categories }) {
 
   return (
     <div className='min-h-screen'>
       <Head>
-        <title>Next Store</title>
+        <title>xStore - Products</title>
         <link rel='icon' href='/favicon.ico' />
       </Head>
 
