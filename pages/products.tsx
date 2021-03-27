@@ -1,7 +1,22 @@
 import Head from 'next/head';
+import Link from 'next/link';
+import { useRouter } from 'next/router';
 import { getAllCategories, getAllProducts } from '../services/products';
 
+export async function getStaticProps(ctx) {
+  const products = await getAllProducts();
+  const categories = await getAllCategories();
+
+  return {
+    props: {
+      categories,
+      products: products.items,
+    }
+  }
+}
+
 export default function Products({ products, categories }) {
+  const { query: { category } } = useRouter();
 
   return (
     <div className='min-h-screen'>
@@ -26,10 +41,16 @@ export default function Products({ products, categories }) {
           <div className="col col-span-3">
             <aside>
               <ul>
-                <li className=""><span className="font-bold">All Categories</span></li>
-                {categories.map(({ id, name }) => (
+                <li>
+                  <Link href={{ pathname: '/products' }}>
+                    <a className="font-bold">All Categories</a>
+                  </Link>
+                </li>
+                {categories.map(({ id, name, slug }) => (
                   <li key={id} className="my-3">
-                    <span className="text-gray-600 hover:text-gray-900">{name}</span>
+                    <Link href={{ pathname: '/products', query: { category: slug } }}>
+                      <a className={`text-black ${slug === category ? 'underline' : 'text-opacity-50 hover:text-opacity-100'}`}>{name}</a>
+                    </Link>
                   </li>
                 ))}
               </ul>
@@ -55,14 +76,3 @@ export default function Products({ products, categories }) {
   );
 }
 
-export async function getStaticProps() {
-  const products = await getAllProducts();
-  const categories = await getAllCategories();
-
-  return {
-    props: {
-      categories,
-      products: products.items,
-    }
-  }
-}

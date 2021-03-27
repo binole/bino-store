@@ -4,7 +4,7 @@ interface Params {
   perPage?: number
 }
 
-export async function getAllProducts({ perPage = 100 }: Params = {}) {
+export async function getAllProducts({ perPage = 100 }: Params = {}): Promise<any> {
   const res = await api.get('products', {
     per_page: perPage
   })
