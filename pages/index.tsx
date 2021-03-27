@@ -1,7 +1,8 @@
 import Head from 'next/head';
-import { getAllProducts } from '../services/products';
+import { getAllCategories, getAllProducts } from '../services/products';
 
-export default function Home({ products }) {
+export default function Home({ products, categories }) {
+
   return (
     <div className='min-h-screen'>
       <Head>
@@ -9,11 +10,11 @@ export default function Home({ products }) {
         <link rel='icon' href='/favicon.ico' />
       </Head>
 
-      <header className="border-b border-gray-200 py-2">
-        <div className="container mx-auto px-4 flex justify-between items-center">
+      <header className="">
+        <div className="container mx-auto px-4 h-12 flex justify-between items-center">
           <a href="/" className="font-bold">xSTORE.</a>
-          <button className="w-9 h-9 px-2 py-2 rounded-full">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <button className="w-9 h-9 inline-flex items-center justify-center rounded-full">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" width="20" height="20" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
             </svg>
           </button>
@@ -21,20 +22,34 @@ export default function Home({ products }) {
       </header>
 
       <main className='container mx-auto my-6 px-4'>
-        <h1 className='text-4xl text-bold mb-8'>
-          All Products
-        </h1>
-        <ol className='grid grid-cols-2 gap-4 md:grid-cols-3 md:gap-6 lg:grid-cols-4 '>
-          {products.map(({ id, name, price, images: [image] }) => {
-            return (
-              <li key={id}>
-                <img src={image.src} alt="" className='w-full rounded' />
-                <h2 className='mt-3'>{name}</h2>
-                <div className='font-bold'>${price}</div>
-              </li>
-            );
-          })}
-        </ol>
+        <div className="grid grid-cols-12 gap-4 md:gap-6">
+          <div className="col col-span-3">
+            <aside>
+              <ul>
+                <li className=""><span className="font-bold">All Categories</span></li>
+                {categories.map(({ id, name }) => (
+                  <li key={id} className="my-3">
+                    <span className="text-gray-600 hover:text-gray-900">{name}</span>
+                  </li>
+                ))}
+              </ul>
+            </aside>
+
+          </div>
+          <div className="col col-span-9">
+            <ol className='grid grid-cols-2 gap-4 md:grid-cols-3 md:gap-6 lg:grid-cols-4 '>
+              {products.map(({ id, name, price, images: [image] }) => {
+                return (
+                  <li key={id}>
+                    <img src={image.src} alt="" className='w-full rounded' />
+                    <h2 className='mt-3'>{name}</h2>
+                    <div className='font-bold'>${price}</div>
+                  </li>
+                );
+              })}
+            </ol>
+          </div>
+        </div>
       </main>
     </div>
   );
@@ -42,10 +57,12 @@ export default function Home({ products }) {
 
 export async function getStaticProps() {
   const products = await getAllProducts();
+  const categories = await getAllCategories();
 
   return {
     props: {
-      products: products.items
+      categories,
+      products: products.items,
     }
   }
 }
