@@ -1,11 +1,11 @@
 import Head from 'next/head';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import { getAllCategories, getAllProducts } from '../services/products';
+import apiClient from '../utils/api-client';
 
 export async function getStaticProps() {
-  const products = await getAllProducts();
-  const categories = await getAllCategories();
+  const products = await apiClient('products');
+  const categories = await apiClient('categories');
 
   return {
     props: {
@@ -68,10 +68,10 @@ export default function Products({ products, categories }) {
 
           </div>
           <div className="col col-span-9">
-            <ol className='grid grid-cols-2 gap-4 md:grid-cols-3 md:gap-6 lg:grid-cols-4 '>
+            <ol className='grid grid-cols-2 gap-4 md:grid-cols-3 md:gap-6 lg:grid-cols-4'>
               {filteredProducts.map(({ id, name, price, images: [image] }) => {
                 return (
-                  <li key={id}>
+                  <li key={id} data-testid='product-item'>
                     <img src={image.src} alt="" className='w-full rounded' />
                     <h2 className='mt-3'>{name}</h2>
                     <div className='font-bold'>${price}</div>
