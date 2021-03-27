@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { getAllCategories, getAllProducts } from '../services/products';
 
-export async function getStaticProps(ctx) {
+export async function getStaticProps() {
   const products = await getAllProducts();
   const categories = await getAllCategories();
 
@@ -16,7 +16,13 @@ export async function getStaticProps(ctx) {
 }
 
 export default function Products({ products, categories }) {
-  const { query: { category } } = useRouter();
+  const { query: { category = [] } } = useRouter();
+
+  const filteredProducts = products.filter((p) => {
+    const cats = p.categories.map(({ slug }) => slug);
+
+    return category?.length ? cats.some(c => category.includes(c)) : p;
+  })
 
   return (
     <div className='min-h-screen'>
@@ -46,20 +52,24 @@ export default function Products({ products, categories }) {
                     <a className="font-bold">All Categories</a>
                   </Link>
                 </li>
-                {categories.map(({ id, name, slug }) => (
-                  <li key={id} className="my-3">
-                    <Link href={{ pathname: '/products', query: { category: slug } }}>
-                      <a className={`text-black ${slug === category ? 'underline' : 'text-opacity-50 hover:text-opacity-100'}`}>{name}</a>
-                    </Link>
-                  </li>
-                ))}
+                {categories.map(({ id, name, slug, itemsSlugs }) => {
+                  const isActive = category?.includes(slug);
+
+                  return (
+                    <li key={id} className="my-3">
+                      <Link href={{ pathname: '/products', query: { category: [slug, ...itemsSlugs] } }}>
+                        <a className={`text-black ${isActive ? 'underline' : 'text-opacity-50 hover:text-opacity-100'}`}>{name}</a>
+                      </Link>
+                    </li>
+                  );
+                })}
               </ul>
             </aside>
 
           </div>
           <div className="col col-span-9">
             <ol className='grid grid-cols-2 gap-4 md:grid-cols-3 md:gap-6 lg:grid-cols-4 '>
-              {products.map(({ id, name, price, images: [image] }) => {
+              {filteredProducts.map(({ id, name, price, images: [image] }) => {
                 return (
                   <li key={id}>
                     <img src={image.src} alt="" className='w-full rounded' />
