@@ -1,8 +1,3 @@
-import api from "../utils/api";
-
-interface Params {
-  perPage?: number
-}
 
 interface Category {
   id: string;
@@ -23,39 +18,18 @@ interface Product {
   images: Array<Image>;
 }
 
-export async function getAllProducts({ perPage = 100 }: Params = {}): Promise<any> {
-  const res = await api.get('products', {
-    per_page: perPage
-  })
+const API_URL = process.env.API_URL;
 
-  return {
-    items: res.data
-  }
+export async function getAllProducts(): Promise<Product> {
+  const res = await fetch(`${API_URL}/products`);
+  const items = await res.json();
+
+  return items
 }
 
-export async function getAllCategories() {
-  const res = await api.get('products/categories');
-  let categories = res.data.reduce((cats, cat) => {
-    return {
-      byId: { ...cats.byId, [cat.id]: { ...cat, items: [], itemsSlugs: [] } },
-      allIds: [...cats.allIds, cat.id]
-    }
-  }, { byId: {}, allIds: [] })
+export async function getAllCategories(): Promise<Category> {
+  const res = await fetch(`${API_URL}/categories`);
+  const items = await res.json();
 
-  const groupedCategories = categories.allIds.reduce((cats, id) => {
-    const cat = categories.byId[id];
-
-    if (cat.parent) {
-      let parent = categories.byId[cat.parent];
-
-      parent.items.push(cat)
-      parent.itemsSlugs.push(cat.slug)
-
-      return cats;
-    }
-
-    return [...cats, cat]
-  }, [])
-
-  return groupedCategories
+  return items
 }

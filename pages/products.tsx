@@ -10,7 +10,7 @@ export async function getStaticProps() {
   return {
     props: {
       categories,
-      products: products.items,
+      products
     }
   }
 }

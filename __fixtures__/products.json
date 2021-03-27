@@ -342,9 +342,9 @@
     "price_html": "<del><span class=\"woocommerce-Price-amount amount\"><bdi><span class=\"woocommerce-Price-currencySymbol\">&pound;</span>20.00</bdi></span></del> <ins><span class=\"woocommerce-Price-amount amount\"><bdi><span class=\"woocommerce-Price-currencySymbol\">&pound;</span>18.00</bdi></span></ins>",
     "related_ids": [
       24,
-      25,
+      23,
       22,
-      23
+      25
     ],
     "meta_data": [
       {
@@ -463,10 +463,10 @@
     "menu_order": 0,
     "price_html": "<span class=\"woocommerce-Price-amount amount\"><bdi><span class=\"woocommerce-Price-currencySymbol\">&pound;</span>18.00</bdi></span>",
     "related_ids": [
-      29,
-      18,
       21,
-      28
+      29,
+      28,
+      18
     ],
     "meta_data": [
       {
@@ -818,9 +818,9 @@
     "menu_order": 0,
     "price_html": "<span class=\"woocommerce-Price-amount amount\"><bdi><span class=\"woocommerce-Price-currencySymbol\">&pound;</span>20.00</bdi></span>",
     "related_ids": [
-      18,
       28,
       21,
+      18,
       38
     ],
     "meta_data": [
@@ -940,10 +940,10 @@
     "menu_order": 0,
     "price_html": "<span class=\"woocommerce-Price-amount amount\"><bdi><span class=\"woocommerce-Price-currencySymbol\">&pound;</span>25.00</bdi></span>",
     "related_ids": [
-      38,
       21,
-      18,
-      29
+      38,
+      29,
+      18
     ],
     "meta_data": [
       {
@@ -1172,8 +1172,8 @@
     "price_html": "<del><span class=\"woocommerce-Price-amount amount\"><bdi><span class=\"woocommerce-Price-currencySymbol\">&pound;</span>45.00</bdi></span></del> <ins><span class=\"woocommerce-Price-amount amount\"><bdi><span class=\"woocommerce-Price-currencySymbol\">&pound;</span>35.00</bdi></span></ins>",
     "related_ids": [
       20,
-      19,
-      27
+      27,
+      19
     ],
     "meta_data": [
       {
@@ -1281,10 +1281,10 @@
     "menu_order": 0,
     "price_html": "<span class=\"woocommerce-Price-amount amount\"><bdi><span class=\"woocommerce-Price-currencySymbol\">&pound;</span>90.00</bdi></span>",
     "related_ids": [
+      23,
       39,
-      24,
       22,
-      23
+      24
     ],
     "meta_data": [
       {
@@ -1403,10 +1403,10 @@
     "menu_order": 0,
     "price_html": "<del><span class=\"woocommerce-Price-amount amount\"><bdi><span class=\"woocommerce-Price-currencySymbol\">&pound;</span>18.00</bdi></span></del> <ins><span class=\"woocommerce-Price-amount amount\"><bdi><span class=\"woocommerce-Price-currencySymbol\">&pound;</span>16.00</bdi></span></ins>",
     "related_ids": [
+      23,
       22,
       25,
-      39,
-      23
+      39
     ],
     "meta_data": [
       {
@@ -1420,6 +1420,809 @@
       "self": [
         {
           "href": "http://nextstore.local/wp-json/wc/v3/products/24"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http://nextstore.local/wp-json/wc/v3/products"
+        }
+      ]
+    }
+  },
+  {
+    "id": 23,
+    "name": "Belt",
+    "slug": "belt",
+    "permalink": "http://nextstore.local/product/belt/",
+    "date_created": "2021-03-27T02:51:33",
+    "date_created_gmt": "2021-03-27T02:51:33",
+    "date_modified": "2021-03-27T02:51:43",
+    "date_modified_gmt": "2021-03-27T02:51:43",
+    "type": "simple",
+    "status": "publish",
+    "featured": false,
+    "catalog_visibility": "visible",
+    "description": "<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>\n",
+    "short_description": "<p>This is a simple product.</p>\n",
+    "sku": "woo-belt",
+    "price": "55",
+    "regular_price": "65",
+    "sale_price": "55",
+    "date_on_sale_from": null,
+    "date_on_sale_from_gmt": null,
+    "date_on_sale_to": null,
+    "date_on_sale_to_gmt": null,
+    "on_sale": true,
+    "purchasable": true,
+    "total_sales": 0,
+    "virtual": false,
+    "downloadable": false,
+    "downloads": [],
+    "download_limit": 0,
+    "download_expiry": 0,
+    "external_url": "",
+    "button_text": "",
+    "tax_status": "taxable",
+    "tax_class": "",
+    "manage_stock": false,
+    "stock_quantity": null,
+    "backorders": "no",
+    "backorders_allowed": false,
+    "backordered": false,
+    "sold_individually": false,
+    "weight": "",
+    "dimensions": {
+      "length": "",
+      "width": "",
+      "height": ""
+    },
+    "shipping_required": true,
+    "shipping_taxable": true,
+    "shipping_class": "",
+    "shipping_class_id": 0,
+    "reviews_allowed": true,
+    "average_rating": "0.00",
+    "rating_count": 0,
+    "upsell_ids": [],
+    "cross_sell_ids": [],
+    "parent_id": 0,
+    "purchase_note": "",
+    "categories": [
+      {
+        "id": 19,
+        "name": "Accessories",
+        "slug": "accessories"
+      }
+    ],
+    "tags": [],
+    "images": [
+      {
+        "id": 52,
+        "date_created": "2021-03-27T02:51:43",
+        "date_created_gmt": "2021-03-27T02:51:43",
+        "date_modified": "2021-03-27T02:51:43",
+        "date_modified_gmt": "2021-03-27T02:51:43",
+        "src": "http://nextstore.local/wp-content/uploads/2021/03/belt-2.jpg",
+        "name": "belt-2.jpg",
+        "alt": ""
+      }
+    ],
+    "attributes": [],
+    "default_attributes": [],
+    "variations": [],
+    "grouped_products": [],
+    "menu_order": 0,
+    "price_html": "<del><span class=\"woocommerce-Price-amount amount\"><bdi><span class=\"woocommerce-Price-currencySymbol\">&pound;</span>65.00</bdi></span></del> <ins><span class=\"woocommerce-Price-amount amount\"><bdi><span class=\"woocommerce-Price-currencySymbol\">&pound;</span>55.00</bdi></span></ins>",
+    "related_ids": [
+      39,
+      25,
+      24,
+      22
+    ],
+    "meta_data": [
+      {
+        "id": 575,
+        "key": "_wpcom_is_markdown",
+        "value": "1"
+      }
+    ],
+    "stock_status": "instock",
+    "_links": {
+      "self": [
+        {
+          "href": "http://nextstore.local/wp-json/wc/v3/products/23"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http://nextstore.local/wp-json/wc/v3/products"
+        }
+      ]
+    }
+  },
+  {
+    "id": 22,
+    "name": "Beanie",
+    "slug": "beanie",
+    "permalink": "http://nextstore.local/product/beanie/",
+    "date_created": "2021-03-27T02:51:33",
+    "date_created_gmt": "2021-03-27T02:51:33",
+    "date_modified": "2021-03-27T02:51:42",
+    "date_modified_gmt": "2021-03-27T02:51:42",
+    "type": "simple",
+    "status": "publish",
+    "featured": false,
+    "catalog_visibility": "visible",
+    "description": "<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>\n",
+    "short_description": "<p>This is a simple product.</p>\n",
+    "sku": "woo-beanie",
+    "price": "18",
+    "regular_price": "20",
+    "sale_price": "18",
+    "date_on_sale_from": null,
+    "date_on_sale_from_gmt": null,
+    "date_on_sale_to": null,
+    "date_on_sale_to_gmt": null,
+    "on_sale": true,
+    "purchasable": true,
+    "total_sales": 0,
+    "virtual": false,
+    "downloadable": false,
+    "downloads": [],
+    "download_limit": 0,
+    "download_expiry": 0,
+    "external_url": "",
+    "button_text": "",
+    "tax_status": "taxable",
+    "tax_class": "",
+    "manage_stock": false,
+    "stock_quantity": null,
+    "backorders": "no",
+    "backorders_allowed": false,
+    "backordered": false,
+    "sold_individually": false,
+    "weight": "",
+    "dimensions": {
+      "length": "",
+      "width": "",
+      "height": ""
+    },
+    "shipping_required": true,
+    "shipping_taxable": true,
+    "shipping_class": "",
+    "shipping_class_id": 0,
+    "reviews_allowed": true,
+    "average_rating": "0.00",
+    "rating_count": 0,
+    "upsell_ids": [],
+    "cross_sell_ids": [],
+    "parent_id": 0,
+    "purchase_note": "",
+    "categories": [
+      {
+        "id": 19,
+        "name": "Accessories",
+        "slug": "accessories"
+      }
+    ],
+    "tags": [],
+    "images": [
+      {
+        "id": 51,
+        "date_created": "2021-03-27T02:51:42",
+        "date_created_gmt": "2021-03-27T02:51:42",
+        "date_modified": "2021-03-27T02:51:42",
+        "date_modified_gmt": "2021-03-27T02:51:42",
+        "src": "http://nextstore.local/wp-content/uploads/2021/03/beanie-2.jpg",
+        "name": "beanie-2.jpg",
+        "alt": ""
+      }
+    ],
+    "attributes": [
+      {
+        "id": 1,
+        "name": "Color",
+        "position": 0,
+        "visible": true,
+        "variation": false,
+        "options": [
+          "Red"
+        ]
+      }
+    ],
+    "default_attributes": [],
+    "variations": [],
+    "grouped_products": [],
+    "menu_order": 0,
+    "price_html": "<del><span class=\"woocommerce-Price-amount amount\"><bdi><span class=\"woocommerce-Price-currencySymbol\">&pound;</span>20.00</bdi></span></del> <ins><span class=\"woocommerce-Price-amount amount\"><bdi><span class=\"woocommerce-Price-currencySymbol\">&pound;</span>18.00</bdi></span></ins>",
+    "related_ids": [
+      24,
+      23,
+      25,
+      39
+    ],
+    "meta_data": [
+      {
+        "id": 565,
+        "key": "_wpcom_is_markdown",
+        "value": "1"
+      }
+    ],
+    "stock_status": "instock",
+    "_links": {
+      "self": [
+        {
+          "href": "http://nextstore.local/wp-json/wc/v3/products/22"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http://nextstore.local/wp-json/wc/v3/products"
+        }
+      ]
+    }
+  },
+  {
+    "id": 21,
+    "name": "T-Shirt",
+    "slug": "t-shirt",
+    "permalink": "http://nextstore.local/product/t-shirt/",
+    "date_created": "2021-03-27T02:51:33",
+    "date_created_gmt": "2021-03-27T02:51:33",
+    "date_modified": "2021-03-27T02:51:42",
+    "date_modified_gmt": "2021-03-27T02:51:42",
+    "type": "simple",
+    "status": "publish",
+    "featured": false,
+    "catalog_visibility": "visible",
+    "description": "<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>\n",
+    "short_description": "<p>This is a simple product.</p>\n",
+    "sku": "woo-tshirt",
+    "price": "18",
+    "regular_price": "18",
+    "sale_price": "",
+    "date_on_sale_from": null,
+    "date_on_sale_from_gmt": null,
+    "date_on_sale_to": null,
+    "date_on_sale_to_gmt": null,
+    "on_sale": false,
+    "purchasable": true,
+    "total_sales": 0,
+    "virtual": false,
+    "downloadable": false,
+    "downloads": [],
+    "download_limit": 0,
+    "download_expiry": 0,
+    "external_url": "",
+    "button_text": "",
+    "tax_status": "taxable",
+    "tax_class": "",
+    "manage_stock": false,
+    "stock_quantity": null,
+    "backorders": "no",
+    "backorders_allowed": false,
+    "backordered": false,
+    "sold_individually": false,
+    "weight": "",
+    "dimensions": {
+      "length": "",
+      "width": "",
+      "height": ""
+    },
+    "shipping_required": true,
+    "shipping_taxable": true,
+    "shipping_class": "",
+    "shipping_class_id": 0,
+    "reviews_allowed": true,
+    "average_rating": "0.00",
+    "rating_count": 0,
+    "upsell_ids": [],
+    "cross_sell_ids": [],
+    "parent_id": 0,
+    "purchase_note": "",
+    "categories": [
+      {
+        "id": 17,
+        "name": "Tshirts",
+        "slug": "tshirts"
+      }
+    ],
+    "tags": [],
+    "images": [
+      {
+        "id": 50,
+        "date_created": "2021-03-27T02:51:41",
+        "date_created_gmt": "2021-03-27T02:51:41",
+        "date_modified": "2021-03-27T02:51:41",
+        "date_modified_gmt": "2021-03-27T02:51:41",
+        "src": "http://nextstore.local/wp-content/uploads/2021/03/tshirt-2.jpg",
+        "name": "tshirt-2.jpg",
+        "alt": ""
+      }
+    ],
+    "attributes": [
+      {
+        "id": 1,
+        "name": "Color",
+        "position": 0,
+        "visible": true,
+        "variation": false,
+        "options": [
+          "Gray"
+        ]
+      }
+    ],
+    "default_attributes": [],
+    "variations": [],
+    "grouped_products": [],
+    "menu_order": 0,
+    "price_html": "<span class=\"woocommerce-Price-amount amount\"><bdi><span class=\"woocommerce-Price-currencySymbol\">&pound;</span>18.00</bdi></span>",
+    "related_ids": [
+      28,
+      38,
+      29,
+      18
+    ],
+    "meta_data": [
+      {
+        "id": 556,
+        "key": "_wpcom_is_markdown",
+        "value": "1"
+      }
+    ],
+    "stock_status": "instock",
+    "_links": {
+      "self": [
+        {
+          "href": "http://nextstore.local/wp-json/wc/v3/products/21"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http://nextstore.local/wp-json/wc/v3/products"
+        }
+      ]
+    }
+  },
+  {
+    "id": 20,
+    "name": "Hoodie with Logo",
+    "slug": "hoodie-with-logo",
+    "permalink": "http://nextstore.local/product/hoodie-with-logo/",
+    "date_created": "2021-03-27T02:51:33",
+    "date_created_gmt": "2021-03-27T02:51:33",
+    "date_modified": "2021-03-27T02:51:41",
+    "date_modified_gmt": "2021-03-27T02:51:41",
+    "type": "simple",
+    "status": "publish",
+    "featured": false,
+    "catalog_visibility": "visible",
+    "description": "<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>\n",
+    "short_description": "<p>This is a simple product.</p>\n",
+    "sku": "woo-hoodie-with-logo",
+    "price": "45",
+    "regular_price": "45",
+    "sale_price": "",
+    "date_on_sale_from": null,
+    "date_on_sale_from_gmt": null,
+    "date_on_sale_to": null,
+    "date_on_sale_to_gmt": null,
+    "on_sale": false,
+    "purchasable": true,
+    "total_sales": 0,
+    "virtual": false,
+    "downloadable": false,
+    "downloads": [],
+    "download_limit": 0,
+    "download_expiry": 0,
+    "external_url": "",
+    "button_text": "",
+    "tax_status": "taxable",
+    "tax_class": "",
+    "manage_stock": false,
+    "stock_quantity": null,
+    "backorders": "no",
+    "backorders_allowed": false,
+    "backordered": false,
+    "sold_individually": false,
+    "weight": "",
+    "dimensions": {
+      "length": "",
+      "width": "",
+      "height": ""
+    },
+    "shipping_required": true,
+    "shipping_taxable": true,
+    "shipping_class": "",
+    "shipping_class_id": 0,
+    "reviews_allowed": true,
+    "average_rating": "0.00",
+    "rating_count": 0,
+    "upsell_ids": [],
+    "cross_sell_ids": [],
+    "parent_id": 0,
+    "purchase_note": "",
+    "categories": [
+      {
+        "id": 18,
+        "name": "Hoodies",
+        "slug": "hoodies"
+      }
+    ],
+    "tags": [],
+    "images": [
+      {
+        "id": 49,
+        "date_created": "2021-03-27T02:51:40",
+        "date_created_gmt": "2021-03-27T02:51:40",
+        "date_modified": "2021-03-27T02:51:40",
+        "date_modified_gmt": "2021-03-27T02:51:40",
+        "src": "http://nextstore.local/wp-content/uploads/2021/03/hoodie-with-logo-2.jpg",
+        "name": "hoodie-with-logo-2.jpg",
+        "alt": ""
+      }
+    ],
+    "attributes": [
+      {
+        "id": 1,
+        "name": "Color",
+        "position": 0,
+        "visible": true,
+        "variation": false,
+        "options": [
+          "Blue"
+        ]
+      }
+    ],
+    "default_attributes": [],
+    "variations": [],
+    "grouped_products": [],
+    "menu_order": 0,
+    "price_html": "<span class=\"woocommerce-Price-amount amount\"><bdi><span class=\"woocommerce-Price-currencySymbol\">&pound;</span>45.00</bdi></span>",
+    "related_ids": [
+      19,
+      27
+    ],
+    "meta_data": [
+      {
+        "id": 547,
+        "key": "_wpcom_is_markdown",
+        "value": "1"
+      }
+    ],
+    "stock_status": "instock",
+    "_links": {
+      "self": [
+        {
+          "href": "http://nextstore.local/wp-json/wc/v3/products/20"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http://nextstore.local/wp-json/wc/v3/products"
+        }
+      ]
+    }
+  },
+  {
+    "id": 19,
+    "name": "Hoodie",
+    "slug": "hoodie",
+    "permalink": "http://nextstore.local/product/hoodie/",
+    "date_created": "2021-03-27T02:51:33",
+    "date_created_gmt": "2021-03-27T02:51:33",
+    "date_modified": "2021-03-27T02:51:56",
+    "date_modified_gmt": "2021-03-27T02:51:56",
+    "type": "variable",
+    "status": "publish",
+    "featured": false,
+    "catalog_visibility": "visible",
+    "description": "<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>\n",
+    "short_description": "<p>This is a variable product.</p>\n",
+    "sku": "woo-hoodie",
+    "price": "42",
+    "regular_price": "",
+    "sale_price": "",
+    "date_on_sale_from": null,
+    "date_on_sale_from_gmt": null,
+    "date_on_sale_to": null,
+    "date_on_sale_to_gmt": null,
+    "on_sale": true,
+    "purchasable": true,
+    "total_sales": 0,
+    "virtual": false,
+    "downloadable": false,
+    "downloads": [],
+    "download_limit": 0,
+    "download_expiry": 0,
+    "external_url": "",
+    "button_text": "",
+    "tax_status": "taxable",
+    "tax_class": "",
+    "manage_stock": false,
+    "stock_quantity": null,
+    "backorders": "no",
+    "backorders_allowed": false,
+    "backordered": false,
+    "sold_individually": false,
+    "weight": "",
+    "dimensions": {
+      "length": "",
+      "width": "",
+      "height": ""
+    },
+    "shipping_required": true,
+    "shipping_taxable": true,
+    "shipping_class": "",
+    "shipping_class_id": 0,
+    "reviews_allowed": true,
+    "average_rating": "0.00",
+    "rating_count": 0,
+    "upsell_ids": [],
+    "cross_sell_ids": [],
+    "parent_id": 0,
+    "purchase_note": "",
+    "categories": [
+      {
+        "id": 18,
+        "name": "Hoodies",
+        "slug": "hoodies"
+      }
+    ],
+    "tags": [],
+    "images": [
+      {
+        "id": 46,
+        "date_created": "2021-03-27T02:51:38",
+        "date_created_gmt": "2021-03-27T02:51:38",
+        "date_modified": "2021-03-27T02:51:38",
+        "date_modified_gmt": "2021-03-27T02:51:38",
+        "src": "http://nextstore.local/wp-content/uploads/2021/03/hoodie-2.jpg",
+        "name": "hoodie-2.jpg",
+        "alt": ""
+      },
+      {
+        "id": 47,
+        "date_created": "2021-03-27T02:51:39",
+        "date_created_gmt": "2021-03-27T02:51:39",
+        "date_modified": "2021-03-27T02:51:39",
+        "date_modified_gmt": "2021-03-27T02:51:39",
+        "src": "http://nextstore.local/wp-content/uploads/2021/03/hoodie-blue-1.jpg",
+        "name": "hoodie-blue-1.jpg",
+        "alt": ""
+      },
+      {
+        "id": 48,
+        "date_created": "2021-03-27T02:51:40",
+        "date_created_gmt": "2021-03-27T02:51:40",
+        "date_modified": "2021-03-27T02:51:40",
+        "date_modified_gmt": "2021-03-27T02:51:40",
+        "src": "http://nextstore.local/wp-content/uploads/2021/03/hoodie-green-1.jpg",
+        "name": "hoodie-green-1.jpg",
+        "alt": ""
+      },
+      {
+        "id": 49,
+        "date_created": "2021-03-27T02:51:40",
+        "date_created_gmt": "2021-03-27T02:51:40",
+        "date_modified": "2021-03-27T02:51:40",
+        "date_modified_gmt": "2021-03-27T02:51:40",
+        "src": "http://nextstore.local/wp-content/uploads/2021/03/hoodie-with-logo-2.jpg",
+        "name": "hoodie-with-logo-2.jpg",
+        "alt": ""
+      }
+    ],
+    "attributes": [
+      {
+        "id": 1,
+        "name": "Color",
+        "position": 0,
+        "visible": true,
+        "variation": true,
+        "options": [
+          "Blue",
+          "Green",
+          "Red"
+        ]
+      },
+      {
+        "id": 0,
+        "name": "Logo",
+        "position": 1,
+        "visible": true,
+        "variation": true,
+        "options": [
+          "Yes",
+          "No"
+        ]
+      }
+    ],
+    "default_attributes": [],
+    "variations": [
+      42,
+      35,
+      36,
+      37
+    ],
+    "grouped_products": [],
+    "menu_order": 0,
+    "price_html": "<span class=\"woocommerce-Price-amount amount\"><bdi><span class=\"woocommerce-Price-currencySymbol\">&pound;</span>42.00</bdi></span> &ndash; <span class=\"woocommerce-Price-amount amount\"><bdi><span class=\"woocommerce-Price-currencySymbol\">&pound;</span>45.00</bdi></span>",
+    "related_ids": [
+      27,
+      20
+    ],
+    "meta_data": [
+      {
+        "id": 542,
+        "key": "_wpcom_is_markdown",
+        "value": "1"
+      }
+    ],
+    "stock_status": "instock",
+    "_links": {
+      "self": [
+        {
+          "href": "http://nextstore.local/wp-json/wc/v3/products/19"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http://nextstore.local/wp-json/wc/v3/products"
+        }
+      ]
+    }
+  },
+  {
+    "id": 18,
+    "name": "V-Neck T-Shirt",
+    "slug": "v-neck-t-shirt",
+    "permalink": "http://nextstore.local/product/v-neck-t-shirt/",
+    "date_created": "2021-03-27T02:51:33",
+    "date_created_gmt": "2021-03-27T02:51:33",
+    "date_modified": "2021-03-27T02:51:55",
+    "date_modified_gmt": "2021-03-27T02:51:55",
+    "type": "variable",
+    "status": "publish",
+    "featured": true,
+    "catalog_visibility": "visible",
+    "description": "<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>\n",
+    "short_description": "<p>This is a variable product.</p>\n",
+    "sku": "woo-vneck-tee",
+    "price": "15",
+    "regular_price": "",
+    "sale_price": "",
+    "date_on_sale_from": null,
+    "date_on_sale_from_gmt": null,
+    "date_on_sale_to": null,
+    "date_on_sale_to_gmt": null,
+    "on_sale": false,
+    "purchasable": true,
+    "total_sales": 0,
+    "virtual": false,
+    "downloadable": false,
+    "downloads": [],
+    "download_limit": 0,
+    "download_expiry": 0,
+    "external_url": "",
+    "button_text": "",
+    "tax_status": "taxable",
+    "tax_class": "",
+    "manage_stock": false,
+    "stock_quantity": null,
+    "backorders": "no",
+    "backorders_allowed": false,
+    "backordered": false,
+    "sold_individually": false,
+    "weight": "",
+    "dimensions": {
+      "length": "",
+      "width": "",
+      "height": ""
+    },
+    "shipping_required": true,
+    "shipping_taxable": true,
+    "shipping_class": "",
+    "shipping_class_id": 0,
+    "reviews_allowed": true,
+    "average_rating": "0.00",
+    "rating_count": 0,
+    "upsell_ids": [],
+    "cross_sell_ids": [],
+    "parent_id": 0,
+    "purchase_note": "",
+    "categories": [
+      {
+        "id": 17,
+        "name": "Tshirts",
+        "slug": "tshirts"
+      }
+    ],
+    "tags": [],
+    "images": [
+      {
+        "id": 43,
+        "date_created": "2021-03-27T02:51:36",
+        "date_created_gmt": "2021-03-27T02:51:36",
+        "date_modified": "2021-03-27T02:51:36",
+        "date_modified_gmt": "2021-03-27T02:51:36",
+        "src": "http://nextstore.local/wp-content/uploads/2021/03/vneck-tee-2.jpg",
+        "name": "vneck-tee-2.jpg",
+        "alt": ""
+      },
+      {
+        "id": 44,
+        "date_created": "2021-03-27T02:51:36",
+        "date_created_gmt": "2021-03-27T02:51:36",
+        "date_modified": "2021-03-27T02:51:36",
+        "date_modified_gmt": "2021-03-27T02:51:36",
+        "src": "http://nextstore.local/wp-content/uploads/2021/03/vnech-tee-green-1.jpg",
+        "name": "vnech-tee-green-1.jpg",
+        "alt": ""
+      },
+      {
+        "id": 45,
+        "date_created": "2021-03-27T02:51:37",
+        "date_created_gmt": "2021-03-27T02:51:37",
+        "date_modified": "2021-03-27T02:51:37",
+        "date_modified_gmt": "2021-03-27T02:51:37",
+        "src": "http://nextstore.local/wp-content/uploads/2021/03/vnech-tee-blue-1.jpg",
+        "name": "vnech-tee-blue-1.jpg",
+        "alt": ""
+      }
+    ],
+    "attributes": [
+      {
+        "id": 1,
+        "name": "Color",
+        "position": 0,
+        "visible": true,
+        "variation": true,
+        "options": [
+          "Blue",
+          "Green",
+          "Red"
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Size",
+        "position": 1,
+        "visible": true,
+        "variation": true,
+        "options": [
+          "Large",
+          "Medium",
+          "Small"
+        ]
+      }
+    ],
+    "default_attributes": [],
+    "variations": [
+      32,
+      33,
+      34
+    ],
+    "grouped_products": [],
+    "menu_order": 0,
+    "price_html": "<span class=\"woocommerce-Price-amount amount\"><bdi><span class=\"woocommerce-Price-currencySymbol\">&pound;</span>15.00</bdi></span> &ndash; <span class=\"woocommerce-Price-amount amount\"><bdi><span class=\"woocommerce-Price-currencySymbol\">&pound;</span>20.00</bdi></span>",
+    "related_ids": [
+      38,
+      29,
+      21,
+      28
+    ],
+    "meta_data": [
+      {
+        "id": 525,
+        "key": "_wpcom_is_markdown",
+        "value": "1"
+      }
+    ],
+    "stock_status": "instock",
+    "_links": {
+      "self": [
+        {
+          "href": "http://nextstore.local/wp-json/wc/v3/products/18"
         }
       ],
       "collection": [
