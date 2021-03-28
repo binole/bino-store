@@ -2,10 +2,11 @@ import Image from 'next/image';
 import Button from '../../components/button/Button';
 import Container from "../../components/container";
 import Layout from "../../components/layout";
+import { getAllProducts } from '../../services/products';
 import apiClient from "../../utils/api-client";
 
 export async function getStaticPaths() {
-  const products = await apiClient('products')
+  const products = await getAllProducts();
 
   const paths = products.map(({ slug }) => ({
     params: { slug },
