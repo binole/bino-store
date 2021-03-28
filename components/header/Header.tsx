@@ -1,8 +1,9 @@
 import Link from "next/link";
+import Container from "../container/Container";
 
 const Header = () => (
   <header>
-    <div className="container mx-auto px-4 h-12 flex justify-between items-center">
+    <Container className="h-12 flex justify-between items-center">
       <Link href='/'>
         <a className="font-bold">BINO.</a>
       </Link>
@@ -11,7 +12,7 @@ const Header = () => (
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
         </svg>
       </button>
-    </div>
+    </Container>
   </header>
 )
 
