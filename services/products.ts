@@ -1,5 +1,7 @@
+let allProducts;
+
 export async function getAllProducts() {
-  const products = await require('../__fixtures__/products.json');
+  const products = allProducts ?? await require('../__fixtures__/products.json');
 
   return products;
 }
@@ -30,4 +32,12 @@ export async function getAllCategories() {
   }, [])
 
   return groupedCategories;
+}
+
+export async function getProduct(slug) {
+  const products = await getAllProducts();
+
+  const product = products.find(p => p.slug === slug);
+
+  return product;
 }

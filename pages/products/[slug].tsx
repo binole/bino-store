@@ -2,8 +2,7 @@ import Image from 'next/image';
 import Button from '../../components/button/Button';
 import Container from "../../components/container";
 import Layout from "../../components/layout";
-import { getAllProducts } from '../../services/products';
-import apiClient from "../../utils/api-client";
+import { getAllProducts, getProduct } from '../../services/products';
 
 export async function getStaticPaths() {
   const products = await getAllProducts();
@@ -16,7 +15,8 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params: { slug } }) {
-  const product = await apiClient(`products/${slug}`)
+  const product = await getProduct(slug);
+
   return {
     props: { product }
   }
