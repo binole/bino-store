@@ -21,12 +21,6 @@ export async function getStaticProps() {
 export default function Products({ products, categories }) {
   const { query: { category = [] } } = useRouter();
 
-  const filteredProducts = products.filter((p) => {
-    const cats = p.categories.map(({ slug }) => slug);
-
-    return category?.length ? cats.some(c => category.includes(c)) : p;
-  })
-
   return (
     <>
       <Head>
@@ -43,9 +37,13 @@ export default function Products({ products, categories }) {
             </div>
             <div className="col col-span-12 sm:col-span-9">
               <ol className='grid grid-cols-2 gap-4 md:grid-cols-3 md:gap-6 lg:grid-cols-4'>
-                {filteredProducts.map(({ id, name, price, images: [image] }) => {
+                {products.map(({ id, name, price, images: [image], categories: pCats }) => {
+                  const cats = pCats.map(({ slug }) => slug);
+                  const isVisible = category.length ? cats.some(c => category.includes(c)) : true;
+                  const classNames = isVisible ? 'block' : 'hidden'
+
                   return (
-                    <li key={id} data-testid='product-item'>
+                    <li key={id} data-testid='product-item' className={classNames}>
                       <ProductItem name={name} price={price} image={image.src} />
                     </li>
                   );
