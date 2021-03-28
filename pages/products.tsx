@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
+import Header from '../components/header';
 import apiClient from '../utils/api-client';
 
 export async function getStaticProps() {
@@ -27,20 +28,11 @@ export default function Products({ products, categories }) {
   return (
     <div className='min-h-screen'>
       <Head>
-        <title>xStore - Products</title>
+        <title>Bino's Store - Products</title>
         <link rel='icon' href='/favicon.ico' />
       </Head>
 
-      <header className="">
-        <div className="container mx-auto px-4 h-12 flex justify-between items-center">
-          <a href="/" className="font-bold">xSTORE.</a>
-          <button className="w-9 h-9 inline-flex items-center justify-center rounded-full">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" width="20" height="20" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
-            </svg>
-          </button>
-        </div>
-      </header>
+      <Header />
 
       <main className='container mx-auto my-6 px-4'>
         <div className="grid grid-cols-12 gap-4 md:gap-6">
