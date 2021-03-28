@@ -5,12 +5,11 @@ import Container from '../../components/container';
 import Layout from '../../components/layout';
 import ProductItem from '../../components/product-item';
 import ProductList from '../../components/product-list';
-import { getAllProducts } from '../../services/products';
-import apiClient from '../../utils/api-client';
+import { getAllCategories, getAllProducts } from '../../services/products';
 
 export async function getStaticProps() {
   const products = await getAllProducts();
-  const categories = await apiClient('categories');
+  const categories = await getAllCategories();
 
   return {
     props: {
