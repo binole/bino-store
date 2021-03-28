@@ -2,7 +2,7 @@ import Head from 'next/head';
 import { useRouter } from 'next/router';
 import Categories from '../components/categories';
 import Container from '../components/container';
-import Header from '../components/header';
+import Layout from '../components/layout';
 import ProductItem from '../components/product-item';
 import apiClient from '../utils/api-client';
 
@@ -28,15 +28,12 @@ export default function Products({ products, categories }) {
   })
 
   return (
-    <div className='min-h-screen'>
+    <>
       <Head>
         <title>Bino's Store - Products</title>
         <link rel='icon' href='/favicon.ico' />
       </Head>
-
-      <Header />
-
-      <main>
+      <Layout>
         <Container className='my-6'>
           <div className="grid grid-cols-12 gap-4 md:gap-6">
             <div className="col col-span-12 sm:col-span-3">
@@ -57,8 +54,8 @@ export default function Products({ products, categories }) {
             </div>
           </div>
         </Container>
-      </main>
-    </div>
+      </Layout>
+    </>
   );
 }
 
