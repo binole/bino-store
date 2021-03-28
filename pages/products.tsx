@@ -3,6 +3,7 @@ import { useRouter } from 'next/router';
 import Categories from '../components/categories';
 import Container from '../components/container';
 import Header from '../components/header';
+import ProductItem from '../components/product-item';
 import apiClient from '../utils/api-client';
 
 export async function getStaticProps() {
@@ -48,9 +49,7 @@ export default function Products({ products, categories }) {
                 {filteredProducts.map(({ id, name, price, images: [image] }) => {
                   return (
                     <li key={id} data-testid='product-item'>
-                      <img src={image.src} alt="" className='w-full rounded' />
-                      <h2 className='mt-3'>{name}</h2>
-                      <div className='font-bold'>${price}</div>
+                      <ProductItem name={name} price={price} image={image.src} />
                     </li>
                   );
                 })}
