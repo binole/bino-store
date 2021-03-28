@@ -6,5 +6,8 @@ module.exports = {
         destination: '/products'
       }
     ];
+  },
+  images: {
+    domains: ['nextstore.local']
   }
 };

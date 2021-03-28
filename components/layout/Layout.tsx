@@ -18,7 +18,7 @@ const Layout: React.FC<Props> = ({ siteTitle = "Bino's Store", pageTitle = '', c
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <Header />
-      <main>
+      <main className='mb-12'>
         {children}
       </main>
       <Footer className='mt-auto' />
